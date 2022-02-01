@@ -24,19 +24,23 @@
 }
 
 .header{
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.534);
     display: flex;
+    background-color: black;
 }
 
 .logo{
     margin-left: 100px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: white;
+    color: #FD3706;
+}
+
+.logo a{
+    color: #FD3706;
 }
 
 .main-nav{
@@ -56,16 +60,25 @@
     transition: all .5s;
 }
 
+a{
+    transition: .5s;
+}
+
+a:hover{
+    opacity: .5;
+}
+
 .main-ul li a{
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
+/* BACKGROUND HEADER */
+
 .bg-main{
-    width: 100vw;
     height: 100vh;
-    background-color: #3D3E40;
+    background-color: #131314;
     color: white;
 }
 
@@ -85,6 +98,7 @@
 .bg-img{
     width: 45%;
     height: 100%;
+    border: 1px solid white;
 }
 
 .bg-title{
@@ -108,7 +122,7 @@
     border-radius: 15px;
     padding: 10px 40px;
     box-shadow: none;
-    border-color: white;
+    border-color: #FD3706;
     color: transparent;
     cursor: pointer;
 }
@@ -116,6 +130,37 @@
 .bg-button a{
     background-color: none;
     color: white;
+}
+
+/* QUEM SOMOS */
+
+.position-center{
+    max-width: 950px;
+    margin: auto;
+}
+
+#quem-somos{
+    height: 100vh;
+}
+
+.quemSomos-title{
+    margin: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.quemSomos-p{
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quemSomos-img{
+    width: 100%;
+    height: 300px;
+    border:2px solid black;
+    margin-top: 70px;
 }
 
 @media (max-width:999px){
@@ -130,7 +175,7 @@
         right: 0;
         width: 50vw;
         height: 90vh;
-        background: rgba(0, 0, 0, 0.753); 
+        background: black; 
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -149,6 +194,16 @@
 
     .main-ul.active{
         transform: translateX(0);
+        position: fixed;
+        top: 10vh;
+    }
+
+    .bg-info{
+        padding-left: 50px;
+    }
+
+    #quem-somos{
+        padding: 20px;
     }
      
 }
