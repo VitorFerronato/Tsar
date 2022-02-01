@@ -24,6 +24,7 @@
 }
 
 .header{
+    z-index: 1000;
     position: fixed;
     top: 0;
     height: 10vh;
@@ -132,35 +133,72 @@ a:hover{
     color: white;
 }
 
-/* QUEM SOMOS */
+/* Sobre o Crossfit */
 
 .position-center{
-    max-width: 950px;
     margin: auto;
 }
 
-#quem-somos{
+#sobre-cross{
     height: 100vh;
+    display: flex;
 }
 
-.quemSomos-title{
+.sobreCross-title{
     margin: 20px;
     text-align: center;
     font-size: 2em;
     font-weight: lighter;
 }
 
-.quemSomos-p{
+.sobreCross-info{
+    width: 50%;
+}
+
+.sobreCross-p{
     letter-spacing: 1px;
     margin-bottom: 20px;
+    padding: 10px;
+    line-height: 40px;
+}
+
+.sobreCross-img{
+    width: 50%;
+    height: 100%;
+    background-color: #252424;
+    position: relative;
+}
+
+.sobreCross-imgContent{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    top: 20%;
+}
+
+.sobreCross-imgContent .bg-color{
+    color: #FD3706;
+    font-weight: 600;
+}
+
+.sobreCross-mainIcons{
+    margin-top: 120px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
     text-align: center;
 }
 
-.quemSomos-img{
-    width: 100%;
-    height: 300px;
-    border:2px solid black;
-    margin-top: 70px;
+.sobreCross-icons i{
+    font-size: 3rem;
+}
+
+.sobreCross-pIcons{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    opacity: .7;
 }
 
 @media (max-width:999px){
@@ -202,8 +240,7 @@ a:hover{
         padding-left: 50px;
     }
 
-    #quem-somos{
-        padding: 20px;
+    #sobre-cross{
     }
      
 }
