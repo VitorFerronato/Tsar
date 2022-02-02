@@ -99,7 +99,6 @@ a:hover{
 .bg-img{
     width: 45%;
     height: 100%;
-    border: 1px solid white;
 }
 
 .bg-title{
@@ -158,6 +157,7 @@ a:hover{
 .sobreCross-p{
     letter-spacing: 1px;
     margin-bottom: 20px;
+    margin-top: 20px;
     padding: 10px;
     line-height: 40px;
 }
@@ -167,7 +167,9 @@ a:hover{
     height: 100%;
     background-color: #252424;
     position: relative;
+    box-shadow: 0.5px 1px 5px rgba(0, 0, 0, 0.692);
 }
+
 
 .sobreCross-imgContent{
     color: white;
@@ -184,7 +186,7 @@ a:hover{
 }
 
 .sobreCross-mainIcons{
-    margin-top: 120px;
+    margin-top: 150px;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -199,6 +201,47 @@ a:hover{
     letter-spacing: 1px;
     font-size: 1.2rem;
     opacity: .7;
+}
+
+#crossParamim{
+    height: 100vh;
+}
+
+.paramim-container{
+    display: flex;
+}
+
+.paramim-info{
+    width: 50vw;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.paramim-mainicons{
+    width: 50vw;
+    height: 100vh;
+    margin-right: 50px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paramim-icons{
+    margin-bottom: 80px;
+}
+
+.paramim-icons i{
+    margin-right: 20px;
+    font-size: 2rem;
+    color: #FD3706;
+}
+
+.paramim-title{ 
+   text-align: center;
+   padding-top: 50px;
+   font-size: 2.5rem;
+   font-weight: 500;
 }
 
 @media (max-width:999px){
@@ -240,9 +283,36 @@ a:hover{
         padding-left: 50px;
     }
 
-    #sobre-cross{
+    .sobreCross-p{
+        margin: 0;
+        text-align: center;
     }
-     
+
+    .sobreCross-mainIcons{
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 20px;
+        width: 100%;
+        text-align: left;
+    }
+    .sobreCross-pIcons{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .paramim-icons{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .sobreCross-pIcons{
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .paramim-mainicons .sobreCross-pIcons{
+        margin: 0;
+    }
 }
 
 .mobile-menu.active .line1{

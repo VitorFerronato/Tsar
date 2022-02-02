@@ -1,0 +1,2 @@
+- Mudar os icones do para mim
+- Ajustar a responsividade do para mim
