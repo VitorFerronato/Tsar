@@ -98,9 +98,17 @@ a:hover{
 
 .bg-img{
     width: 45%;
-    height: 100%;
+    height: 100%;  
 }
 
+
+.bg-img img{
+    width: 100%;
+}
+
+.bg-img img{
+    height: fit-content;
+}
 .bg-title{
     font-size: 5em;
     letter-spacing: 5px;
@@ -151,7 +159,7 @@ a:hover{
 }
 
 .sobreCross-info{
-    width: 50%;
+    width: 60%;
 }
 
 .sobreCross-p{
@@ -163,7 +171,7 @@ a:hover{
 }
 
 .sobreCross-img{
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: #252424;
     position: relative;
@@ -186,7 +194,7 @@ a:hover{
 }
 
 .sobreCross-mainIcons{
-    margin-top: 150px;
+    margin-top: 100px;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -213,14 +221,13 @@ a:hover{
 
 .paramim-info{
     width: 50vw;
-    height: 100%;
+    height: 100vh;
     margin-left: 50px;
 }
 
 .paramim-mainicons{
     width: 50vw;
     height: 100vh;
-    margin-right: 50px;
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -242,6 +249,136 @@ a:hover{
    padding-top: 50px;
    font-size: 2.5rem;
    font-weight: 500;
+}
+
+/* CONTATO */
+
+#contato{
+    position: relative;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #252424fd;
+   margin-top: 180px;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+#contato .content h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FD3706;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contact-info .box .icon{
+     min-width: 60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     color: #FD3706;
+     font-size: 32px;
+}
+
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300 ;
+}
+
+.container .contact-info .box .text h4{
+    font-weight: 500;
+    color: #FD3706;
+}
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: grey;
+}
+
+.contactform h3{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    background: grey;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: white;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #FD3706;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #FD3706;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
 }
 
 @media (max-width:999px){
@@ -313,7 +450,28 @@ a:hover{
     .paramim-mainicons .sobreCross-pIcons{
         margin: 0;
     }
+
+    .contact{
+         padding: 50px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contact-info{
+        margin-bottom: 40px;
+    }
+    .container .contact-info,.contactform{
+        width: 100%;
+    }
+
+    .contactform{
+        margin: 0 20px ;
+    }
+
 }
+
 
 .mobile-menu.active .line1{
     transform: rotate(-135deg) translate(-8px,-11px);
