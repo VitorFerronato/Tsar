@@ -4,160 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
     <script src="script.js" defer></script>
+
     <title>CrossFit Tsar</title>
 </head>
 
 <body>
-<!--- HEADER -->
-    <header class="header">
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="#home"><p>CrossFit Tsar</p></a>
-            </div>
-
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
-            <ul class="main-ul" >
-                <li><a href="#sobre-cross">Sobre o CrossFit</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#">Something</a></li>
-                <li><a href="#">Something</a></li>
-            </ul>
-        </nav>
-    </header>
-<!--BACKGROUND HEADER-->
-
-    <section class="bg-main" id="home">
-         <div class="bg-container">
-
-            <div class="bg-info">
-                <h2 class="bg-title"><span class="bg-color">Time</span> to <br> Get <span class="bg-color"> Fit</span></h2>
-                
-                <p class="bg-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci soluta eaque sunt. Delectus autem labore eius vitae corrupti expedita eligendi praesentium quidem libero, quae dignissimos aliquam similique nihil fuga enim.</p>
-                <button class="bg-button"><a href="#">Agende uma aula <br> experimental</a></button>
-            </div>
-            
-            <div class="bg-img">
-            
-            </div>
-        </div>
-    </section> 
-
-    <section class="position-center" id="sobre-cross">
-        <div class="sobreCross-img">
-            <h3 class="sobreCross-title sobreCross-imgContent">O que é <br> <span class="bg-color">CrossFit</span></h3>
-        </div>
-
-        <div class="sobreCross-info">
-            <p class="sobreCross-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, assumenda repellat officiis perspiciatis eaque hic quam harum, iste dolorem necessitatibus expedita velit blanditiis dolor ipsum minus deleniti placeat aliquam optio.</p>
-            <p class="sobreCross-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi molestias, fuga maiores obcaecati nesciunt soluta eos voluptate quia aliquam voluptatum totam, ad voluptates dicta nam? Culpa quaerat velit perferendis.</p>
-
-            <div class="sobreCross-mainIcons">
-                <div class="sobreCross-icons icon1"><i class="bi bi-heart-pulse"></i> <p class="sobreCross-pIcons"><br> Condiconamento <br>metabolico - Cardio</p> 
+    <main>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="https://bulma.io">
+                    <h1 class="header__logo">CrossFit Tsar</h1>
+                  </a>
+              
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
                 </div>
-                <div class="sobreCross-icons icon3"><i class="bi bi-bicycle"></i><p class="sobreCross-pIcons"><br> Ginástica </p> 
-                </div>
-                <div class="sobreCross-icons icon2"><i class="bi bi-clipboard-pulse"></i> <p class="sobreCross-pIcons"><br> Levantamento de peso <br> LPO</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
 
-    <section class="position-center" id="crossParamim">
-        <h3 class="paramim-title"><span class="bg-color">CrossFit</span><br> é para mim?</h3>
-        
-        <div class="paramim-container">
-            <div class="paramim-info">
-                <p class="sobreCross-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fuga animi ut laboriosam tenetur veniam ipsum magnam vel dicta, blanditiis consequuntur quaerat labore ratione nam aperiam dolore hic praesentium nulla?</p>
-                <p class="sobreCross-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fuga animi ut laboriosam tenetur veniam ipsum magnam vel dicta, blanditiis consequuntur quaerat labore ratione nam aperiam dolore hic praesentium nulla?</p>
-                <p class="sobreCross-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fuga animi ut laboriosam tenetur veniam ipsum magnam vel dicta, blanditiis consequuntur quaerat labore ratione nam aperiam dolore hic praesentium nulla?</p>
-            </div>
-
-            <div class="paramim-mainicons">
-                <div class="paramim-icons picon1">
-                    <i class="bi bi-arrow-up-circle"></i><span class="sobreCross-pIcons">Melhora não sei o que, rejuvencsimneot taltlasu lreo mimposu</span>
-                </div>
-                <div class="paramim-icons picon1">
-                    <i class="bi bi-book-half"></i><span class="sobreCross-pIcons">Melhora não sei o que, rejuvencsimneot taltlasu lreo mimposu</span>
-                </div>
-                <div class="paramim-icons picon1">
-                    <i class="bi bi-bezier"></i><span class="sobreCross-pIcons">Melhora não sei o que, rejuvencsimneot taltlasu lreo mimposu</span>
-                </div>
-                <div class="paramim-icons picon1">
-                    <i class="bi bi-basket3"></i></i><span class="sobreCross-pIcons">Melhora não sei o que, rejuvencsimneot taltlasu lreo mimposu</span>
-                </div>
-                <div class="paramim-icons picon1">
-                    <i class="bi bi-award-fill"></i><span class="sobreCross-pIcons">Melhora não sei o que, rejuvencsimneot taltlasu lreo mimposu</span>
-                </div>
-        </div>
-    </section>
-
-    <!--CONTATO-->
-    <section class="position-center" id="contato">
-        <div class="content">
-             <h3> Contato </h3>
-        </div>
-        
-        <div class="container">
-
-            <div class="contact-info">
-                <div class="box">
-                    <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                    <div class="text">
-                        <h4>Endereço</h4>
-                        <p>Rua Jardim Itália, N- 38 <br>Joaçaba-SC </p>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                      <a class="navbar-item">
+                        Home
+                      </a>
+                      <a class="navbar-item">
+                        Sobre o CrossFit
+                      </a>
+                      <a class="navbar-item">
+                        Planos
+                      </a>
+                      <a class="navbar-item">
+                        Contato
+                      </a>
                     </div>
-                </div>
-            
-                <div class="box">
-                    <div class="icon"><i class="bi bi-telephone"></i></div>
-                    <div class="text">
-                        <h4>Telefone</h4>
-                        <p>(49) 9 9817-0538</p>
-                    </div>
-                </div>
-            
-                <div class="box">
-                    <div class="icon"><i class="bi bi-envelope"></i></div>
-                    <div class="text">
-                        <h4>Email</h4>
-                        <p>vitorferronato@gmail.com</p>
-                    </div>
-                </div>
+            </nav>
+        </header>
+
+        <!-- HOME -->
+        <section class="section" id="section">
+          <div class="home__bg">
+            <div class="home__data">
+              <h2 class="title"> <span class="span__contrast">Time</span>  <br> Get <span class="span__contrast">fit</span></h2>
+
+              <div class="home__description">
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, fugit?.</p>
+
+                <button class="button home__button">Contate nos</button>
+              </div>
             </div>
+          </div>
+        </section>
 
-            <div class="contactform">
-                <form>
-                    <h3>Envie uma mensagem</h3>
-                    <div class="inputbox">
-                        <input type="text" required="required">
-                        <span>Nome completo</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="text" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputbox">
-                        <textarea required="required"></textarea>
-                        <span>Digite seu texto</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </section>
-
+    </main>
 </body>
 
 </html>

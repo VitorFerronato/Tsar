@@ -1,484 +1,98 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root{
+
+    /* Colors */
+
+    --hue-color: 33;
+
+    --first-color: hsl(var(--hue-color), 91%, 50%);
+    --second-color: #F2B90C;
+    --dark-color: #222121fd;
+
+    --main-title: 2rem;
+
+    --section-margin: 2rem;
+}
+
+/* Global Classes */
+
+.section{
+    height: 100vh;
+}
+
+.span__contrast{
+    color: var(--first-color);
+    font-weight: 600;
+}
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
-.mobile-menu{
-    cursor: pointer;
-    display: none;
-}
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #FD3706;
-    margin: 8px;
-    transition: .3s;
-}
-
-.header{
-    z-index: 1000;
-    position: fixed;
-    top: 0;
+.navbar{
+    background-color: var(--dark-color);
+    align-items: center;
     height: 10vh;
-    width: 100vw;
-    display: flex;
+}
+
+.header__logo{
+    color: var(--first-color);
+    padding-left: 2rem;
+    height: 100%;
+}
+
+.navbar-menu{
+    padding-right: 2rem;
+}
+
+.navbar-item{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.navbar-burger span{
+    background-color: #fff;
+}
+
+/* HOME */
+
+#section{
+    height: 90vh;
+    position: relative;
+    padding: 0;
     background-color: black;
 }
 
-.logo{
-    margin-left: 100px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #FD3706;
+.home__bg{
+    background-image: url(./img/bg-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
 }
 
-.logo a{
-    color: #FD3706;
-}
-
-.main-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-ul{
-    display: flex;
-    margin-right: 200px;
-}
-
-.main-ul li{
-    margin-left: 80px;
-    transition: all .5s;
-}
-
-a{
-    transition: .5s;
-}
-
-a:hover{
-    opacity: .5;
-}
-
-.main-ul li a{
-    color: white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-/* BACKGROUND HEADER */
-
-.bg-main{
-    height: 100vh;
-    background-color: #131314;
-    color: white;
-}
-
-.bg-container{
-    padding-top: 10vh;
-    height: 100%;
-    display: flex;
-}
-
-.bg-info{
-    width: 55%;
-    height: 100%;
-    padding-top: 200px;
-    padding-left: 100px;
-}
-
-.bg-img{
-    width: 45%;
-    height: 100%;  
-}
-
-
-.bg-img img{
-    width: 100%;
-}
-
-.bg-img img{
-    height: fit-content;
-}
-.bg-title{
-    font-size: 5em;
-    letter-spacing: 5px;
-    font-weight: lighter;
-}
-
-.bg-color{
-    color: #FD3706;
-    font-weight: 600;
-}
-
-.bg-p{
-    letter-spacing: 1px;
-    margin: 20px 0px;
-}
-
-.bg-button{
-    background: none;
-    border-radius: 15px;
-    padding: 10px 40px;
-    box-shadow: none;
-    border-color: #FD3706;
-    color: transparent;
-    cursor: pointer;
-}
-
-.bg-button a{
-    background-color: none;
-    color: white;
-}
-
-/* Sobre o Crossfit */
-
-.position-center{
-    margin: auto;
-}
-
-#sobre-cross{
-    height: 100vh;
-    display: flex;
-}
-
-.sobreCross-title{
-    margin: 20px;
-    text-align: center;
-    font-size: 2em;
-    font-weight: lighter;
-}
-
-.sobreCross-info{
-    width: 60%;
-}
-
-.sobreCross-p{
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    line-height: 40px;
-}
-
-.sobreCross-img{
-    width: 40%;
-    height: 100%;
-    background-color: #252424;
-    position: relative;
-    box-shadow: 0.5px 1px 5px rgba(0, 0, 0, 0.692);
-}
-
-
-.sobreCross-imgContent{
-    color: white;
-    font-size: 3rem;
-    font-weight: 500;
+.home__data{
     position: absolute;
-    right: 20px;
-    top: 20%;
+    bottom: 6rem;
+    padding-left: 2rem;
 }
 
-.sobreCross-imgContent .bg-color{
-    color: #FD3706;
-    font-weight: 600;
-}
-
-.sobreCross-mainIcons{
-    margin-top: 100px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.sobreCross-icons i{
+.title{
     font-size: 3rem;
-}
-
-.sobreCross-pIcons{
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-    opacity: .7;
-}
-
-#crossParamim{
-    height: 100vh;
-}
-
-.paramim-container{
-    display: flex;
-}
-
-.paramim-info{
-    width: 50vw;
-    height: 100vh;
-    margin-left: 50px;
-}
-
-.paramim-mainicons{
-    width: 50vw;
-    height: 100vh;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.paramim-icons{
-    margin-bottom: 80px;
-}
-
-.paramim-icons i{
-    margin-right: 20px;
-    font-size: 2rem;
-    color: #FD3706;
-}
-
-.paramim-title{ 
-   text-align: center;
-   padding-top: 50px;
-   font-size: 2.5rem;
-   font-weight: 500;
-}
-
-/* CONTATO */
-
-#contato{
-    position: relative;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   background-color: #252424fd;
-   margin-top: 180px;
-}
-
-.contact .content{
-    max-width: 800px;
-    text-align: center;
-}
-
-#contato .content h3{
-    font-size: 36px;
-    font-weight: 500;
-    color: #FD3706;
-}
-
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
-
-.container .contact-info{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container .contact-info .box{
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-
-.container .contact-info .box .icon{
-     min-width: 60px;
-     height: 60px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border-radius: 50%;
-     color: #FD3706;
-     font-size: 32px;
-}
-
-.container .contact-info .box .text{
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
     color: white;
-    flex-direction: column;
-    font-weight: 300 ;
+
 }
 
-.container .contact-info .box .text h4{
-    font-weight: 500;
-    color: #FD3706;
-}
-
-.contactform{
-    width: 40%;
-    padding: 40px;
-    background: grey;
-}
-
-.contactform h3{
-    font-size: 30px;
+.subtitle{
     color: white;
-    font-weight: 500;
-}
-
-.contactform .inputbox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.contactform .inputbox input,
-.contactform .inputbox textarea{
-    width: 100%;
-    background: grey;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-    resize: none;
-}
-
-.contactform .inputbox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: white;
-}
-
-.contactform .inputbox input:focus ~ span,
-.contactform .inputbox input:valid ~ span
-.contactform .inputbox textarea:focus ~ span,
-.contactform .inputbox textarea:valid ~ span{
-    color: #FD3706;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-
-.contactform .inputbox input[type="submit"]{
-    width: 100px;
-    background: #FD3706;
-    color: white;
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-}
-
-@media (max-width:999px){
-    body{
-        overflow-x: hidden;
-    }
-    
-    .main-ul{
-        position: absolute;
-        margin: 0;
-        top: 10vh;
-        right: 0;
-        width: 50vw;
-        height: 90vh;
-        background: black; 
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in ;
-    }
-
-    .main-ul li{
-        margin-left: 0;
-    }
-
-    .mobile-menu{
-        display: block;
-        margin-right: 10px;
-    }
-
-    .main-ul.active{
-        transform: translateX(0);
-        position: fixed;
-        top: 10vh;
-    }
-
-    .bg-info{
-        padding-left: 50px;
-    }
-
-    .sobreCross-p{
-        margin: 0;
-        text-align: center;
-    }
-
-    .sobreCross-mainIcons{
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 20px;
-        width: 100%;
-        text-align: left;
-    }
-    .sobreCross-pIcons{
-        display: inline-block;
-        margin-left: 20px;
-    }
-
-    .paramim-icons{
-        display: inline-block;
-        text-align: center;
-    }
-
-    .sobreCross-pIcons{
-        margin: 0;
-        margin-left: 20px;
-    }
-
-    .paramim-mainicons .sobreCross-pIcons{
-        margin: 0;
-    }
-
-    .contact{
-         padding: 50px;
-    }
-
-    .container{
-        flex-direction: column;
-    }
-
-    .container .contact-info{
-        margin-bottom: 40px;
-    }
-    .container .contact-info,.contactform{
-        width: 100%;
-    }
-
-    .contactform{
-        margin: 0 20px ;
-    }
 
 }
 
 
-.mobile-menu.active .line1{
-    transform: rotate(-135deg) translate(-8px,-11px);
-}
-.mobile-menu.active .line2{
-    opacity: 0;
-}
-.mobile-menu.active .line3{
-    transform: rotate(135deg) translate(-5px, 7px);
-}
+
+
