@@ -51,6 +51,11 @@ html{
     margin: 1rem;
 }
 
+.section__subtitle{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .text__description{
     text-align: center;
     color: var(--dark-color);
@@ -194,6 +199,10 @@ a.navbar-item:hover{
 
 /* COACH */
 
+#coach h2{
+    margin-bottom: 0;
+}
+
 .aboutus__img{
     display: flex;
 }
@@ -224,3 +233,51 @@ a.navbar-item:hover{
     color: green;
 }
 
+/* CONTATO */
+
+.input:hover,
+.textarea:hover{
+    border-color: var(--first-color);
+}
+
+#contactUs .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__content-data{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px rgba(128,128,128, .25);
+}
+
+.contact__box{
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__box-title{
+    display: flex;
+}
+
+.contact__box-title i{
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.contact__info-title{
+    color: #000;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.contact__info-subtitle{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 1rem;
+}
