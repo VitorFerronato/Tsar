@@ -116,10 +116,10 @@ a.navbar-item:hover{
 }
 
 .home__bg{
-    /* background-image: url(./img/bg-home_fundo.jpg);
+    background-image: url(./img/bg-home_fundo.jpg);
     background-size: cover;
-    background-position: center; */
-    background-color: var(--dark-color);
+    background-position: center;
+    /* background-color: var(--dark-color); */
     height: 100vh;
 }
 
@@ -186,7 +186,8 @@ a.navbar-item:hover{
 
 .aboume__box{
     display: flex;
-    margin: 1rem;
+    margin: 1.5rem;
+    text-align: center;
 }
 
 .aboutme__icon{
@@ -365,6 +366,7 @@ a.navbar-item:hover{
 
 .footer__icons i {
     color: #fff;
+    cursor: pointer;
 }
 /* Scroll bar */
 ::-webkit-scrollbar{
@@ -381,3 +383,6 @@ a.navbar-item:hover{
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--first-color);
 }
+
+
+
