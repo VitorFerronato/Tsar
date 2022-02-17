@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JavaScript -->
-    <script src="script.js" defer></script>
+    <script src="./js/script.js" defer></script>
 
     <title>CrossFit Tsar</title>
 </head>
@@ -24,31 +24,31 @@
     <main>
         <!-- HEADER -->
         <header class="header" id="header">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                  <a class="navbar-item" href="https://bulma.io">
+                  <a class="navbar-item" href="#home">
                     <h1 class="header__logo">CrossFit Tsar</h1>
                   </a>
               
-                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+                  <a role="button" class="navbar-burger is-hoverable" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                   </a>
                 </div>
 
-                <div id="navbarBasicExample" class="navbar-menu">
+                <div id="navbarBasicExample" class="navbar-menu .show-menu">
                     <div class="navbar-end">
-                      <a class="navbar-item">
+                      <a class="navbar-item" href="#home">
                         Home
                       </a>
-                      <a class="navbar-item">
+                      <a class="navbar-item" href="#aboutCross">
                         Sobre o CrossFit
                       </a>
-                      <a class="navbar-item">
-                        Planos
+                      <a class="navbar-item" href="#coach">
+                        Coach
                       </a>
-                      <a class="navbar-item">
+                      <a class="navbar-item" href="#contactUs">
                         Contato
                       </a>
                     </div>
@@ -56,7 +56,7 @@
         </header>
 
         <!-- HOME -->
-        <section class="section" id="section">
+        <section class="section" id="home">
           <div class="home__bg">
             <div class="home__data">
               <h2 class="title"> <span class="span__contrast">Time</span>  <br> Get <span class="span__contrast">fit</span></h2>
@@ -64,12 +64,135 @@
               <div class="home__description">
                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, fugit?.</p>
 
-                <button class="button home__button">Contate nos</button>
+                <button class="button home__button">Sobre nós</button>
               </div>
             </div>
           </div>
         </section>
 
+        <!-- ABOUT CROSS  -->
+        <section class="section" id="aboutCross">
+          <h2 class="section__title">O que é CrossFit?</h2>
+          <div class="container">
+
+            <div class="about__bg">
+              <h2 class="section__title">O que é CrossFit?</h2>
+            </div>
+
+            <div class="about__data">
+              <p class="text__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eius asperiores nemo sit ipsam, natus dicta veritatis repellat praesentium dolorum aspernatur quidem corporis nam. Explicabo, at? Corrupti expedita id perspiciatis.Lorem não sei o que la iplsuni cabeça da inede nao sei oque.
+              </p>
+
+                <div class="about__container">
+                  <div class="about__box">
+                    <i class="bi bi-bicycle about__icon"></i>
+                    <span class="about__icon-span">Cardio</span>
+                  </div>
+
+                  <div class="about__box">
+                    <i class="bi bi-activity about__icon"></i>
+                    <span class="about__icon-span">Condicionamento</span>
+                  </div>
+
+                  <div class="about__box">
+                    <i class="bi bi-person-lines-fill about__icon"></i>
+                    <span class="about__icon-span">LPO</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT CROSS FOR ME -->
+        <section class="section" id="about__Crossme">
+          <h2 class="section__title">CrossFit é para mim?</h2>
+          <div class="container">
+            <div class="aboutme__content">
+              <div class="aboume__box">
+                <i class="bi bi-heart-pulse aboutme__icon"></i>
+                <p class="about__icon-span">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, saepe expedita.</p>
+              </div>
+
+              <div class="aboume__box">
+                <i class="bi bi-boxes aboutme__icon"></i>
+                <p class="about__icon-span">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, saepe expedita.</p>
+              </div>
+
+              <div class="aboume__box">
+                <i class="bi bi-bandaid-fill aboutme__icon"></i>
+                <p class="about__icon-span">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, saepe expedita.</p>
+              </div>
+
+              <div class="aboume__box">
+                <i class="bi bi-clipboard2-pulse aboutme__icon"></i>
+                <p class="about__icon-span">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, saepe expedita.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT US-->
+        <section class="section" id="coach">
+          <h2 class="section__title">Coach</h2>
+          <div class="container">
+            <div class="aboutus__img">
+              <div class="aboutus__icons">
+                <a href=""><i class="bi bi-whatsapp aboutus__icon"></i></a>
+                <a href=""><i class="bi bi-instagram aboutus__icon"></i></a>
+                <a href=""><i class="bi bi-envelope aboutus__icon"></i></a>
+            </div>
+
+                <img class="aboutus__img-coach" src="css/img/bg-home.jpg" alt="">
+            </div>
+
+            <div class="aboutus__description">
+              <p class="text__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia veritatis nam, corporis possimus assumenda neque, cupiditate sint libero natus quibusdam esse dignissimos alias labore nulla mollitia sequi eos quod ut.</p>
+              <p class="text__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia veritatis nam, corporis possimus assumenda neque, cupiditate sint libero natus quibusdam esse dignissimos alias labore nulla mollitia sequi eos quod ut.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="section" id="contactUs">
+          <h2 class='section__title'>Contato</h2>
+          <div class="container">
+            <div class="field">
+              <label class="label">Nome</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="ex: Alex Smith">
+                <span class="icon is-small is-left">
+                  <i class="bi bi-envelope"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has has-icons-left">
+                <input class="input" type="email" placeholder="ex: alexsmith@gmail.com">
+                <span class="icon is-small is-left">
+                  <i class="bi bi-person"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Telefone</label>
+              <div class="control has-icons-left">
+                <input class="input" type="tel" placeholder="ex: (49) 9 9999-9999">
+                <span class="icon is-small is-left">
+                  <i class="bi bi-telephone"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="label">Mensagem</label>
+              <textarea class="textarea has-fixed-size" placeholder="Conte um pouco de você e o que gostaria."></textarea>
+            </div>
+        </section>
+        
     </main>
 </body>
 

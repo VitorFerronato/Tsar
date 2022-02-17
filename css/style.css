@@ -9,17 +9,32 @@
 
     --first-color: hsl(var(--hue-color), 91%, 50%);
     --second-color: #F2B90C;
-    --dark-color: #222121fd;
+    --dark-color: #222121be;
+    --title-color: #000;
 
     --main-title: 2rem;
 
     --section-margin: 2rem;
 }
 
+/* Reset styles */
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 1.5rem;
+}
 /* Global Classes */
 
-.section{
-    height: 100vh;
+.bi{
+    transition: .5s;
 }
 
 .span__contrast{
@@ -27,9 +42,19 @@
     font-weight: 600;
 }
 
-*{
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+.section__title{
+    color: var(--title-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 1rem;
+}
+
+.text__description{
+    text-align: center;
+    color: var(--dark-color);
+    margin: 1rem;
 }
 
 /* HEADER */
@@ -42,38 +67,55 @@
 
 .header__logo{
     color: var(--first-color);
+    margin-top: .3rem;
+    font-size: 1.5rem;
     padding-left: 2rem;
-    height: 100%;
+}
+
+.navbar-burger{
+    margin-top: .3rem;
 }
 
 .navbar-menu{
     padding-right: 2rem;
+    
 }
 
 .navbar-item{
     color: #fff;
     letter-spacing: 2px;
+    transition: .3s;
+}
+
+a.navbar-item:hover{
+    color: var(--first-color);
+    background-color: transparent;
+}
+
+.navbar-menu.is-active{
+    background-color: var(--dark-color);
+    text-align: center;
 }
 
 .navbar-burger span{
-    background-color: #fff;
+    background-color: var(--second-color);
 }
+
 
 /* HOME */
 
-#section{
-    height: 90vh;
+#home{
     position: relative;
     padding: 0;
-    background-color: black;
+    height: 100vh;
 }
 
 .home__bg{
-    background-image: url(./img/bg-home.jpg);
+    background-image: url(./img/bg-home_fundo.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
+    /* background-color: var(--dark-color); */
+    height: 100vh;
 }
 
 .home__data{
@@ -90,9 +132,95 @@
 
 .subtitle{
     color: white;
-
 }
 
+.home__button{
+    background-color: #F2B90C;
+    border: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .3s;
+}
 
+.home__button:hover{
+    opacity: .8;
+}
 
+/* ABOUT CROSS */
+
+#about__cross{
+    height: 50vh;
+}
+.about__bg{
+    display: none;
+}
+.about__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.about__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.about__icon{
+    text-align: center;
+    color: var(--second-color);
+    font-size: 2rem;
+}
+
+.about__icon-span{
+    color: rgba(0, 0, 0, 0.671);
+}
+
+/* CROSS FOR ME? */
+
+.aboume__box{
+    display: flex;
+    margin: 1rem;
+}
+
+.aboutme__icon{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    color: var(--first-color);
+    font-size: 2rem;
+}
+
+/* COACH */
+
+.aboutus__img{
+    display: flex;
+}
+
+.aboutus__icons{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutus__icon{
+    color: var(--first-color);
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+.aboutus__icons a{
+    padding-top: 1rem;
+}
+
+.aboutus__img-coach{
+    width: 300px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.bi-whatsapp:hover{
+    color: green;
+}
 
