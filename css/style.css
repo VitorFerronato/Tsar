@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 :root{
-
-    /* Colors */
-
     --hue-color: 33;
 
     --first-color: hsl(var(--hue-color), 91%, 50%);
@@ -21,16 +18,22 @@
 *{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
     color: var(--dark-color);
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 1.5rem;
 }
+
 /* Global Classes */
 
 .bi{
@@ -63,11 +66,24 @@ html{
 }
 
 /* HEADER */
-
 .navbar{
     background-color: var(--dark-color);
     align-items: center;
     height: 10vh;
+}
+
+a.navbar-item:hover{
+    color: var(--first-color);
+    background-color: transparent;
+}
+
+.navbar-menu.is-active{
+    background-color: var(--dark-color);
+    text-align: center;
+}
+
+.navbar-burger span{
+    background-color: var(--second-color);
 }
 
 .header__logo{
@@ -91,22 +107,6 @@ html{
     letter-spacing: 2px;
     transition: .3s;
 }
-
-a.navbar-item:hover{
-    color: var(--first-color);
-    background-color: transparent;
-}
-
-.navbar-menu.is-active{
-    background-color: var(--dark-color);
-    text-align: center;
-}
-
-.navbar-burger span{
-    background-color: var(--second-color);
-}
-
-
 /* HOME */
 
 #home{
@@ -239,6 +239,9 @@ a.navbar-item:hover{
 .bi-envelope:hover{
     color: red;
 }
+.bi-facebook:hover{
+    color: blue;
+}
 
 /* testimonials */
 
@@ -331,6 +334,38 @@ a.navbar-item:hover{
     margin-top: 1rem;
 }
 
+/* FOOTER */
+
+.footer{
+    background-color: var(--dark-color);
+}
+
+.footer .content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__img-container{
+    width: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+}
+
+.footer__list a{
+    color: #fff;
+}
+.footer__list a:hover{
+    color: rgb(173, 169, 169);
+}
+
+.footer__icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__icons i {
+    color: #fff;
+}
 /* Scroll bar */
 ::-webkit-scrollbar{
     width: .60rem;

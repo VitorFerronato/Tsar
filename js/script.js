@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  /* Remove menu mobile */
+ 
+  
   // Testimonials swiper
 
 let swiperTestimonials = new Swiper(".testimonial__container", {

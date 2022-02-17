@@ -18,46 +18,46 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JavaScript -->
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" defer ></script>
 
     <title>CrossFit Tsar</title>
 </head>
 
 <body>
+  
+ <!-- HEADER -->
+ <header class="header" id="header">
+  <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#home">
+          <h1 class="header__logo">CrossFit Tsar</h1>
+        </a>
+    
+        <a role="button" class="navbar-burger is-hoverable" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu .show-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#home">
+              Home
+            </a>
+            <a class="navbar-item" href="#aboutCross">
+              Sobre o CrossFit
+            </a>
+            <a class="navbar-item" href="#coach">
+              Coach
+            </a>
+            <a class="navbar-item" href="#contactUs">
+              Contato
+            </a>
+          </div>
+  </nav>
+</header>
     <main>
-        <!-- HEADER -->
-        <header class="header" id="header">
-            <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                  <a class="navbar-item" href="#home">
-                    <h1 class="header__logo">CrossFit Tsar</h1>
-                  </a>
-              
-                  <a role="button" class="navbar-burger is-hoverable" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                  </a>
-                </div>
-
-                <div id="navbarBasicExample" class="navbar-menu .show-menu">
-                    <div class="navbar-end">
-                      <a class="navbar-item" href="#home">
-                        Home
-                      </a>
-                      <a class="navbar-item" href="#aboutCross">
-                        Sobre o CrossFit
-                      </a>
-                      <a class="navbar-item" href="#coach">
-                        Coach
-                      </a>
-                      <a class="navbar-item" href="#contactUs">
-                        Contato
-                      </a>
-                    </div>
-            </nav>
-        </header>
-
         <!-- HOME -->
         <section class="section" id="home">
           <div class="home__bg">
@@ -317,7 +317,42 @@
         </section>
 
         <!-- FOOTER -->
-        
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <div class="footer__img-container">
+              <img class="footer__img" src="#" alt="">
+            </div>
+
+            <ul class="footer__list">
+              <li>
+                <a href="#home">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#aboutCross">
+                  Sobre o CrossFit
+                </a>
+              </li>
+              <li>
+                <a href="#home">
+                  Coach
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  Contato
+                </a>
+              </li>
+            </ul>
+
+            <div class="footer__icons">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-whatsapp"></i>
+            </div>
+          </div>
+        </footer>
     </main>
 
      <!-- Swipper slide -->
