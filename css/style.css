@@ -116,10 +116,10 @@ a.navbar-item:hover{
 }
 
 .home__bg{
-    background-image: url(./img/bg-home_fundo.jpg);
+    /* background-image: url(./img/bg-home_fundo.jpg);
     background-size: cover;
-    background-position: center;
-    /* background-color: var(--dark-color); */
+    background-position: center; */
+    background-color: var(--dark-color);
     height: 100vh;
 }
 
@@ -232,6 +232,51 @@ a.navbar-item:hover{
 .bi-whatsapp:hover{
     color: green;
 }
+.bi-instagram:hover{
+    color: orangered;
+}
+
+.bi-envelope:hover{
+    color: red;
+}
+
+/* testimonials */
+
+.testimonial__data,
+.testimonial__header{
+    display: flex;
+}
+
+.testimonial__data{
+    justify-content: space-between;
+    margin-bottom:1rem;
+}
+
+.testimonial__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: .75rem;
+}
+
+.testimonial__name{
+    font-size: 1.5rem;
+    color: var(--title-color);
+}
+
+.testimonial__client{
+    font-size: 1rem;
+    color: var(--title-color);
+
+}
+
+.testimonial__description{
+    margin-bottom: 2rem;
+}
+
+.testimonial__icon-star{
+    color: var(--first-color);
+}
 
 /* CONTATO */
 
@@ -280,4 +325,24 @@ a.navbar-item:hover{
 .contact__info-subtitle{
     color: rgba(0, 0, 0, 0.616);
     font-size: 1rem;
+}
+
+#contactUs .home__button{
+    margin-top: 1rem;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: rgba(126, 122, 122, 0.185);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--second-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--first-color);
 }

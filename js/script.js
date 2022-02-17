@@ -1,5 +1,5 @@
 
-// MENU HAMBUERGUER --------------
+// BURGUER MENU --------------
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -25,3 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
+  // Testimonials swiper
+
+let swiperTestimonials = new Swiper(".testimonial__container", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween:48,
+  
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dinamicBullets: false,
+  },
+  
+  mousewheel: true,
+  keyboard: true,
+  grabCursor: true,
+});
