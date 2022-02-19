@@ -40,6 +40,20 @@ html{
     transition: .5s;
 }
 
+.bi-whatsapp:hover{
+    color: green;
+}
+.bi-instagram:hover{
+    color: orangered;
+}
+
+.bi-envelope:hover{
+    color: red;
+}
+.bi-facebook:hover{
+    color: blue;
+}
+
 .span__contrast{
     color: var(--first-color);
     font-weight: 600;
@@ -230,19 +244,121 @@ a.navbar-item:hover{
     text-align: center;
 }
 
-.bi-whatsapp:hover{
-    color: green;
-}
-.bi-instagram:hover{
-    color: orangered;
+
+/* Planos */
+
+.pricing-plan{
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem;
+    margin-bottom: 2rem;
 }
 
-.bi-envelope:hover{
-    color: red;
+.pricing-plan__highlighted{
+    box-shadow: 0 0 15px rgba(0,0,0, 0.4);
+    transform: scale(1.05);
 }
-.bi-facebook:hover{
-    color: blue;
+
+.pricing-plan__special-text{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-color);
+    background: var(--second-color);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2) inset;
 }
+
+.pricing-plan__header{
+    padding: 1.5rem;
+    background: var(--dark-color);
+}
+
+.pricing-plan__title,
+.pricing-plan__summary {
+    margin: 0;
+    text-align: center;
+    color: var(--first-color);
+}
+
+.pricing-plan__title{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.pricing-plan__summary{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.pricing-plan__description{
+    padding: 1.5rem;
+}
+
+.pricing-plan__list{
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-plan__feature{
+    margin: 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9em; 
+}
+
+.pricing-plan__feature:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.pricing-plan__feature:before {
+    content: "\2714";
+    color: var(--second-color);
+    position: absolute;
+    left: 0;
+}
+
+.pricing-plan__actions {
+    padding: 1.5rem;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plan__button{
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem 1.2rem;
+    color: var(--first-color);
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    font-weight: bold;
+}
+
+.pricing-plan__button:hover{
+    background-color: var(--first-color);
+    color: #ffffff;
+}
+
+.pricing-plan__cost{
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+}
+
+.pricing-plan__text{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+
 
 /* testimonials */
 
@@ -280,6 +396,30 @@ a.navbar-item:hover{
 
 .testimonial__icon-star{
     color: var(--first-color);
+}
+
+/* Parcerias */
+.support{
+    padding: 0;
+}
+
+.support h2{
+    margin: 0;
+}
+.support__container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.support__img{
+    width: 20%;
+    height: 100%;
+}
+
+.support__img img{
+    width: 100%;
+    border-radius: 50%;
 }
 
 /* CONTATO */
