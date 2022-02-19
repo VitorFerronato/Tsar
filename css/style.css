@@ -524,5 +524,86 @@ a.navbar-item:hover{
     background-color: var(--first-color);
 }
 
+@media screen and (min-width: 768px){
+    /* HEADER */
+    #home .subtitle{
+        width: 60%;
+    }
+    #home .title{
+        font-size: 3.5rem;
+    }
 
+    /* COACH */
+
+    .aboutus__img{
+        display: block;
+        text-align: center;
+    }
+    .aboutus__icons{
+        display: flex;
+        flex-direction: row;
+    }
+    .aboutus__img-coach{
+        width: 50%;
+        margin-top: 1rem;
+    }
+    
+    /* PLANS */
+
+    .pricing__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pricing-plan{
+        width: 60%;
+    }
+    
+    /* PARCERIAS */
+    .support__img{
+        text-align: center;
+    }
+    .support__img img{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    /* HOME */
+
+    .home__data{
+        padding-left: 4rem;
+    }
+    #home .title{
+        font-size: 4rem;
+    }
+    .home__bg{
+        background-size: contain;
+    }
+
+    /* ABOUT CROSS */
+    #aboutCross .text__description{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .aboutme__content{
+        padding-left: 2rem;
+    }
+    .pricing__container{
+        flex-direction: row;
+    }
+    #contactUs .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact__content-input{
+        width: 50%;
+    }
+    .contact__content-data{
+        width: 40%;
+        justify-content: center;
+    }
+}
+    
 
