@@ -130,10 +130,10 @@ a.navbar-item:hover{
 }
 
 .home__bg{
-    background-image: url(./img/bg-home_fundo.jpg);
+    /* background-image: url(./img/bg-home_fundo.jpg);
     background-size: cover;
-    background-position: center;
-    /* background-color: var(--dark-color); */
+    background-position: center; */
+    background-color: var(--dark-color);
     height: 100vh;
 }
 
@@ -579,20 +579,101 @@ a.navbar-item:hover{
         font-size: 4rem;
     }
     .home__bg{
+        /* background-image: url(./img/bg-home-max.jpg);
         background-size: contain;
+        background-position: left left; */
+        background-color: black;
     }
 
     /* ABOUT CROSS */
-    #aboutCross .text__description{
+    #aboutCross{
+        display: flex;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about__div-title{
+        width: 50%;
+        /* background-image: url(./img/bg-home_fundo.jpg); */
+        background-color: var(--dark-color);
+        background-size: cover;
+        position: relative;
+    }
+    .about__div-title .section__title{
+        position: absolute;
+        margin: 0;
+        right: 5rem;
+        top: 7rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    #aboutCross .container{
+        width: 50%;
+        padding-top: 5rem;
         text-align: center;
-        margin-bottom: 3rem;
     }
-    .aboutme__content{
-        padding-left: 2rem;
+    .about__container{
+        margin-top: 8rem;
     }
+    .about__icon{
+        font-size: 3rem;
+    }
+    .about__bg{
+        display: block;
+    }
+
+    /*ABOUT CROSS FOR ME?*/
+
+    #about__Crossme{
+        height: 60vh;
+        display: flex;
+        /* border: 0.5px solid rgba(0, 0, 0, 0.103); */
+        box-shadow: 0px 1px 5px rgba(128,128,128, .25);
+    }
+    .aboutme__div-title{
+        width: 50%;
+    }
+    .aboutme__div-title .section__title{
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+    #about__Crossme .container{
+        width: 50%;
+    }
+
+    /*  PLANS */
+
     .pricing__container{
         flex-direction: row;
     }
+
+    /* COACH */
+    #coach .container{
+        display: flex;
+    }
+    .aboutus__img{
+        width: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .aboutus__img-coach{
+        width: 500px;
+    }
+
+    .aboutus__description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* CONTACTS */
+
     #contactUs .container{
         flex-direction: row;
         justify-content: space-between;
