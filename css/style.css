@@ -130,9 +130,9 @@ a.navbar-item:hover{
 }
 
 .home__bg{
-    /* background-image: url(./img/bg-home_fundo.jpg);
+    background-image: url(./img/bg-home_fundo.jpg);
     background-size: cover;
-    background-position: center; */
+    background-position: center; 
     background-color: var(--dark-color);
     height: 100vh;
 }
@@ -579,10 +579,11 @@ a.navbar-item:hover{
         font-size: 4rem;
     }
     .home__bg{
-        /* background-image: url(./img/bg-home-max.jpg);
-        background-size: contain;
-        background-position: left left; */
+        background-image: url(./img/bg-home-max.jpg);
+        background-size: cover;
+        background-position: left left; 
         background-color: black;
+        background-repeat: no-repeat;
     }
 
     /* ABOUT CROSS */
@@ -595,7 +596,7 @@ a.navbar-item:hover{
     
     .about__div-title{
         width: 50%;
-        /* background-image: url(./img/bg-home_fundo.jpg); */
+        background-image: url(./img/peopleAbout.jpg);
         background-color: var(--dark-color);
         background-size: cover;
         position: relative;
