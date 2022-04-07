@@ -373,9 +373,10 @@ a.navbar-item:hover{
 }
 
 .testimonial__img{
+    object-fit: cover;
+    clip-path: circle();
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     margin-right: .75rem;
 }
 
